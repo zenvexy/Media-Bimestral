@@ -3,13 +3,13 @@ generator client {
   provider = "prisma-client-js"
 }
 
-datasource db {
-  provider = "mysql"
-}
-
 // datasource db {
-//   provider = "postgresql"
+//   provider = "mysql"
 // }
+
+datasource db {
+   provider = "postgresql"
+}
 
 model Professor {
   id      Int     @id @default(autoincrement())
