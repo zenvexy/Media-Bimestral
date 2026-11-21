@@ -1,0 +1,413 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My API Collection
+meta:
+  id: wrk_78de0ed224664bd881a6d2120cdd21c7
+  created: 1795039391854
+  modified: 1795039391854
+  description: ""
+collection:
+  - name: Loja Salgados
+    meta:
+      id: fld_33512228efed414e91f0c15625576d9d
+      created: 1795039404383
+      modified: 1795039404383
+      sortKey: -1795039404383
+      description: ""
+    children:
+      - name: Produtos
+        meta:
+          id: fld_da389a17a48347018fa5ef2ab3ccae3f
+          created: 1795039415295
+          modified: 1795039421188
+          sortKey: -1795039415295
+          description: ""
+      - name: Pedidos
+        meta:
+          id: fld_9cd1e67b9f484c46892afe90fdaa9322
+          created: 1795039435292
+          modified: 1795039435292
+          sortKey: -1795039435292
+          description: ""
+  - name: Média Final
+    meta:
+      id: fld_e1a7fc31e67d411aafd9dd6e509b3ff5
+      created: 1795280748515
+      modified: 1795280751159
+      sortKey: -1795039404483
+      description: ""
+    children:
+      - name: Professores
+        meta:
+          id: fld_2fe521aa77b94163af767cfab0bbf846
+          created: 1795280748515
+          modified: 1795280793388
+          sortKey: -1795039435292
+          description: ""
+        children:
+          - url: http://localhost:3000/professores/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_5eada642a8714f14881e310bd41d4ed2
+              created: 1795280748515
+              modified: 1795283469185
+              isPrivate: false
+              description: ""
+              sortKey: -1795039445855
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"nome": "teste",
+                		"email": "teste@escola.com",
+                	  "senha": "senha123", 
+                		"materia": "MATEMATICA"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/professores/listar
+            name: Listar
+            meta:
+              id: req_8f8f801162de4fd9b960467ed90787d8
+              created: 1795280748515
+              modified: 1795283617807
+              isPrivate: false
+              description: ""
+              sortKey: -1795039447624
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/professores/atualizar/5
+            name: Atualizar
+            meta:
+              id: req_b8df89c898d24b45abdcf73dc8d5faa7
+              created: 1795280748515
+              modified: 1795286009624
+              isPrivate: false
+              description: ""
+              sortKey: -1795039444409
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"senha": "senha1234"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/professores/excluir/5
+            name: Excluir
+            meta:
+              id: req_d5c2510d8a5f482f825e89355c0d3909
+              created: 1795280748515
+              modified: 1795286046244
+              isPrivate: false
+              description: ""
+              sortKey: -1795039439153
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/professores/login
+            name: Login
+            meta:
+              id: req_12b8210a341c4e7591c6e24dea02b80f
+              created: 1795283254589
+              modified: 1795286024353
+              isPrivate: false
+              description: ""
+              sortKey: -1795283254589
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"email": "teste@escola.com",
+                	"senha": "senha1234"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Notas
+        meta:
+          id: fld_f23c2979e7254a518c031154d5e48e42
+          created: 1795280748515
+          modified: 1795286298329
+          sortKey: -1795039415295
+          description: ""
+        children:
+          - url: http://localhost:3000/notas/excluir/7
+            name: Excluir
+            meta:
+              id: req_3d89cb6ad72940678b694e8ae30ea425
+              created: 1795280748515
+              modified: 1795287670103
+              isPrivate: false
+              description: ""
+              sortKey: -1795039451130
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/notas/atualizar/7
+            name: Atualizar
+            meta:
+              id: req_72f02e6d5d3747759b0b63dfe0fdeb16
+              created: 1795280748515
+              modified: 1795287647036
+              isPrivate: false
+              description: ""
+              sortKey: -1795039452575
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "alunoMatricula": 4,
+                  "professorId": 1,
+                  "bimestre1": 8,
+                  "bimestre2": 7.5,
+                  "bimestre3": 9,
+                  "bimestre4": 8.5
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/notas/listar
+            name: Listar
+            meta:
+              id: req_952ea48010b7449884f4210040e8b139
+              created: 1795280748515
+              modified: 1795286305974
+              isPrivate: false
+              description: ""
+              sortKey: -1795039455239
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/notas/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_be8e07096c13413b94a03a270c591bb5
+              created: 1795280748515
+              modified: 1795287621869
+              isPrivate: false
+              description: ""
+              sortKey: -1795039453953
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "alunoMatricula": 2,
+                  "professorId": 1,
+                  "bimestre1": 8,
+                  "bimestre2": 7.5,
+                  "bimestre3": 9,
+                  "bimestre4": 8.5
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Alunos
+        meta:
+          id: fld_4bb58bdf4bdc4c698b6d0af58b8a22ce
+          created: 1795280757944
+          modified: 1795286084163
+          sortKey: -1795039425293.5
+          description: ""
+        children:
+          - url: http://localhost:3000/alunos/excluir/6
+            name: Excluir
+            meta:
+              id: req_1c9f9cc8a07f4c2087c1a9c46261918d
+              created: 1795280757944
+              modified: 1795286909966
+              isPrivate: false
+              description: ""
+              sortKey: -1795039439153
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_bbc455114a7048ce9b40c62604c3a0f0
+              created: 1795280757944
+              modified: 1795286859487
+              isPrivate: false
+              description: ""
+              sortKey: -1795039445855
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"nome": "Aluno seis"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos/atualizar/6
+            name: Atualizar
+            meta:
+              id: req_d18ddda2c7b148ba992ffb6cefade25e
+              created: 1795280757944
+              modified: 1795286902836
+              isPrivate: false
+              description: ""
+              sortKey: -1795039444409
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "Aluno seis"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos/listar
+            name: Listar
+            meta:
+              id: req_dd8e5460803c4081980d3d4229ed5fe7
+              created: 1795280757944
+              modified: 1795286699831
+              isPrivate: false
+              description: ""
+              sortKey: -1795039447624
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Matérias
+        meta:
+          id: fld_48c05f7127494d53a31857fe96f5ddc8
+          created: 1795280765966
+          modified: 1795280765966
+          sortKey: -1795039430292.75
+          description: ""
+        children:
+          - url: http://localhost:3000/materias/listar
+            name: Listar
+            meta:
+              id: req_78dadee055d84f76904f1c1d1ef30476
+              created: 1795280765966
+              modified: 1795286041951
+              isPrivate: false
+              description: ""
+              sortKey: -1795039447624
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_82e039d275a1a73bf5cddb3f497f209f976bccfe
+    created: 1795039391860
+    modified: 1795039391860
+environments:
+  name: Base Environment
+  meta:
+    id: env_82e039d275a1a73bf5cddb3f497f209f976bccfe
+    created: 1795039391858
+    modified: 1795039391858
+    isPrivate: false

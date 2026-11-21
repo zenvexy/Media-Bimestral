@@ -1,0 +1,47 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+// datasource db {
+//   provider = "postgresql"
+// }
+
+model Professor {
+  id      Int     @id @default(autoincrement())
+  nome    String
+  email   String @unique
+  senha   String
+  materia Materia
+  notas   Nota[]
+}
+
+model Aluno {
+  matricula    Int     @id @default(autoincrement())
+  nome  String
+  notas Nota[]
+}
+
+model Nota {
+  id          Int       @id @default(autoincrement())
+  alunoMatricula     Int
+  professorId Int
+  aluno       Aluno     @relation(fields: [alunoMatricula], references: [matricula])
+  professor   Professor @relation(fields: [professorId], references: [id])
+  bimestre1   Float?
+  bimestre2   Float?
+  bimestre3   Float?
+  bimestre4   Float?
+  mediaFinal  Float?
+}
+
+enum Materia {
+  MATEMATICA
+  PORTUGUES
+  HISTORIA
+  GEOGRAFIA
+}
