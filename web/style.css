@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #eef2ff;
+}
+
+header {
+  padding: 1.5rem;
+  color: white;
+  background: #312e81;
+}
+
+nav a {
+  margin-right: 1rem;
+  color: white;
+}
+
+.professor-logado {
+  margin-right: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section,
+.card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: white;
+  border-radius: 8px;
+}
+
+form,
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  padding: 0.6rem;
+  font: inherit;
+}
+
+button {
+  color: white;
+  background: #4338ca;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.perigo {
+  background: #dc2626;
+}
+
+.mensagem {
+  color: green;
+}
+
+.erro {
+  color: red;
+}
+
+.tabela {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+footer {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.pagina-login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ede9fe;
+}
+
+.login-cabecalho {
+  width: 100%;
+  padding: 0.75rem;
+  text-align: center;
+  color: #312e81;
+  background: transparent;
+}
+
+.login-principal {
+  width: 100%;
+  max-width: none;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+.login-card {
+  width: min(100%, 330px);
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.login-card form {
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+}
+
+.login-card input,
+.login-card select,
+.login-card button {
+  padding: 0.5rem;
+}
+
+.botao-secundario {
+  display: block;
+  padding: 0.6rem;
+  color: #3730a3;
+  text-align: center;
+  background: #ddd6fe;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.login-cadastro {
+  margin-top: 0.75rem;
+}

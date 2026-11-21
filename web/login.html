@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Média Bimestral</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body class="pagina-login" data-page="login">
+    <header class="login-cabecalho">
+      <h1>Login do professor</h1>
+    </header>
+
+    <main class="login-principal">
+      <section class="login-card">
+        <h2>Entrar</h2>
+        <p>Use o e-mail e a senha cadastrados para acessar o sistema.</p>
+
+        <form id="formLogin">
+          <label>
+            E-mail
+            <input id="email" type="email" required>
+          </label>
+
+          <label>
+            Senha
+            <input id="senha" type="password" required>
+          </label>
+
+          <button type="submit">Entrar</button>
+        </form>
+
+        <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+        <div class="login-cadastro">
+          <p>Ainda não existe professor cadastrado?</p>
+          <a class="botao-secundario" href="cadastro.html">Cadastrar professor</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>Frontend Média Bimestral</footer>
+  </body>
+</html>

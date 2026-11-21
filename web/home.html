@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Bimestral</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="home">
+    <header>
+      <h1>Média Bimestral</h1>
+      <p>Controle simples de professores, alunos e notas.</p>
+
+      <nav>
+        <a class="ativo" href="home.html">Início</a>
+        <a href="professores.html">Professores</a>
+        <a href="alunos.html">Alunos</a>
+        <a href="notas.html">Notas</a>
+        <a href="materias.html">Matérias</a>
+        <span id="professorLogado" class="professor-logado"></span>
+        <a id="sair" href="login.html">Sair</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Bem-vindo</h2>
+        <p>Use os atalhos abaixo para cadastrar e consultar os dados da escola.</p>
+      </section>
+
+      <div class="grid">
+        <article class="card">
+          <h2>Professores</h2>
+          <p>Cadastre professores por matéria.</p>
+          <a href="professores.html">Abrir professores</a>
+        </article>
+
+        <article class="card">
+          <h2>Alunos</h2>
+          <p>Cadastre alunos e consulte as matrículas.</p>
+          <a href="alunos.html">Abrir alunos</a>
+        </article>
+
+        <article class="card">
+          <h2>Notas</h2>
+          <p>Lance as quatro notas e veja a média final.</p>
+          <a href="notas.html">Abrir notas</a>
+        </article>
+
+        <article class="card">
+          <h2>Matérias</h2>
+          <p>Consulte as matérias disponíveis.</p>
+          <a href="materias.html">Abrir matérias</a>
+        </article>
+      </div>
+    </main>
+
+    <footer>Frontend Média Bimestral</footer>
+  </body>
+</html>

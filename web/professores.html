@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores | Média Bimestral</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="professores">
+    <header>
+      <h1>Professores</h1>
+      <p>Cadastre e consulte os professores.</p>
+
+      <nav>
+        <a href="home.html">Início</a>
+        <a class="ativo" href="professores.html">Professores</a>
+        <a href="alunos.html">Alunos</a>
+        <a href="notas.html">Notas</a>
+        <a href="materias.html">Matérias</a>
+        <span id="professorLogado" class="professor-logado"></span>
+        <a id="sair" href="login.html">Sair</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Novo professor</h2>
+
+        <form id="formProfessor">
+          <label>
+            Nome
+            <input id="nome" required>
+          </label>
+
+          <label>
+            E-mail
+            <input id="email" type="email" required>
+          </label>
+
+          <label>
+            Senha
+            <input id="senha" type="password" required>
+          </label>
+
+          <label>
+            Matéria
+            <select id="materia" required>
+              <option value="MATEMATICA">Matemática</option>
+              <option value="PORTUGUES">Português</option>
+              <option value="HISTORIA">História</option>
+              <option value="GEOGRAFIA">Geografia</option>
+            </select>
+          </label>
+
+          <button type="submit">Cadastrar</button>
+          <button id="cancelar" type="button" hidden>Cancelar</button>
+        </form>
+      </section>
+
+      <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+      <section>
+        <h2>Professores cadastrados</h2>
+
+        <div class="tabela">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Matéria</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+            <tbody id="listaProfessores"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>Frontend Média Bimestral</footer>
+  </body>
+</html>

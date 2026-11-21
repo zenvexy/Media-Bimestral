@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Média Bimestral</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body class="pagina-login" data-page="cadastro">
+    <header class="login-cabecalho">
+      <h1>Cadastro de professor</h1>
+      <p>Média Bimestral</p>
+    </header>
+
+    <main class="login-principal">
+      <section class="login-card">
+        <h2>Criar cadastro</h2>
+        <p>Cadastre o primeiro professor para entrar no sistema.</p>
+
+        <form id="formCadastro">
+          <label>
+            Nome
+            <input id="cadastroNome" required>
+          </label>
+
+          <label>
+            E-mail
+            <input id="cadastroEmail" type="email" required>
+          </label>
+
+          <label>
+            Senha
+            <input id="cadastroSenha" type="password" required>
+          </label>
+
+          <label>
+            Matéria
+            <select id="cadastroMateria" required>
+              <option value="MATEMATICA">Matemática</option>
+              <option value="PORTUGUES">Português</option>
+              <option value="HISTORIA">História</option>
+              <option value="GEOGRAFIA">Geografia</option>
+            </select>
+          </label>
+
+          <button type="submit">Cadastrar</button>
+        </form>
+
+        <p id="mensagem" class="mensagem" aria-live="polite"></p>
+        <a class="botao-secundario" href="login.html">Voltar para o login</a>
+      </section>
+    </main>
+
+    <footer>Frontend Média Bimestral</footer>
+  </body>
+</html>

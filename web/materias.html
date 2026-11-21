@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matérias | Média Bimestral</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="materias">
+    <header>
+      <h1>Matérias</h1>
+      <p>Matérias aceitas no cadastro de professores.</p>
+
+      <nav>
+        <a href="home.html">Início</a>
+        <a href="professores.html">Professores</a>
+        <a href="alunos.html">Alunos</a>
+        <a href="notas.html">Notas</a>
+        <a class="ativo" href="materias.html">Matérias</a>
+        <span id="professorLogado" class="professor-logado"></span>
+        <a id="sair" href="login.html">Sair</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Lista de matérias</h2>
+        <p id="mensagem" class="mensagem" aria-live="polite"></p>
+        <ul id="listaMaterias"></ul>
+      </section>
+    </main>
+
+    <footer>Frontend Média Bimestral</footer>
+  </body>
+</html>
